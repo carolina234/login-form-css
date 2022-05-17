@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    bottom: 0;
+
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+.logo {
+    position: absolute;
+    width: 115px;
+    height: 28px;
+    left: 40px;
+    top: 40px;
+}
+
+.side {
+    position: absolute;
+    right: 0px;
+    width: 623px;
+    height: 100vh;
+    object-fit: cover;
+
+
+    object-position: 80% 100%;
+
+
+}
+
+input {
+    accent-color: var(--primary-color);
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 572px;
+    height: 512px;
+    left: 82px;
+    top: 15%;
+
+    background: #24221F;
+    border-radius: 4px;
+}
+
+p {
+    position: relative;
+    color: var(--text-base);
+    left: 123px;
+    top: 16px;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.header img {
+
+
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: 61px;
+    left: 116px;
+
+
+}
+
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 143px;
+    color: var(--text-title);
+    font-size: 3rem;
+
+}
+
+.e {
+    position: relative;
+    left: 123px;
+    top: 28px;
+    color: var(--text-base);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.email {
+    background-image: url('./images/mail.svg');
+    background-repeat: no-repeat;
+    position: relative;
+    left: 123px;
+    padding-left: 30px;
+    top: 28px;
+    color: var(--text-base);
+    width: 334px;
+    height: 51px;
+    background-color: var(--form-background);
+    border: 1px solid #868686;
+    border-radius: 4px;
+    z-index: index 1;
+    background-position: 5px;
+}
+
+.email:focus {
+    outline: none;
+    border: 1px solid #ffc632;
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+    background-image: url('./images/mail-focus.svg');
+}
+
+
+
+.s {
+    position: relative;
+    left: 123px;
+    top: 40px;
+    color: var(--text-base);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.senha {
+    position: relative;
+    color: var(--text-base);
+    left: 123px;
+    top: 40px;
+    width: 334px;
+    height: 51px;
+    background-color: var(--form-background);
+    border: 1px solid #868686;
+    border-radius: 4px;
+    padding-left: 30px;
+    background-image: url('./images/lock.svg');
+    background-repeat: no-repeat;
+    background-position: 5px;
+    ;
+
+
+}
+
+.senha:focus {
+    outline: none;
+    border: 1px solid #ffc632;
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+    background-image: url('./images/lock-focus.svg');
+}
+
+.senha:focus~.eye {
+    background-image: url('./eyee.svg');
+}
+
+.eye {
+    position: absolute;
+    background-image: url('./images/eye.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 25px;
+    height: 33px;
+    top: 250px;
+    left: 74%;
+}
+
+
+.lembre {
+    position: relative;
+    left: 123px;
+    top: 65px;
+    color: var(--text-base);
+
+    font-weight: 400;
+
+    cursor: pointer;
+    display: inline;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    margin-right: 30px;
+    font-size: 1.5rem;
+}
+
+input {
+    accent-color: var(--primary-color);
+}
+
+.lembre input {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+}
+
+
+.checkmark {
+    position: absolute;
+    left: 0px;
+    height: 20px;
+    top: 1px;
+    width: 20px;
+    background-color: var(--form-background);
+    border: 2px solid var(--text-base);
+    border-radius: 4px;
+}
+
+.lembre:hover input~.checkmark {
+    background-color: var(--background);
+}
+
+.lembre input:checked~.checkmark {
+    background-image: url('./images/check.svg');
+
+    background-repeat: no-repeat;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.link {
+    position: relative;
+    top: 65px;
+    left: 126px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+button {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 12px 24px;
+
+    position: absolute;
+
+    width: 334px;
+
+    height: 51px;
+
+    left: 122px;
+
+    top: 368px;
+
+    border: none;
+
+    background: #FFC632;
+
+    border-radius: 4px;
+
+    font-style: normal;
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+    color: #473404;
+    cursor: pointer;
+}
+
+
+
+.registre {
+    position: relative;
+    text-decoration: none;
+    color: var(--primary-color);
+    top: 146px;
+    left: 310px;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+}
+
+.n {
+
+    position: relative;
+    color: var(--primary-color);
+    top: 170px;
+    left: 143px;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 100;
+
+}
+
+
+
+
+.carta {
+    position: absolute;
+    top: 172px;
+    left: 130px;
+
+}
+
+.cadeado {
+    position: absolute;
+    top: 258px;
+    left: 129px;
+}
+
+.olho {
+    position: absolute;
+    top: 258px;
+    left: 413px;
+    background-image: url('./images/eye.svg');
+}
+
+
+
+@media (max-width:1280px){
+    .side{
+        visibility: hidden;
+    }
+}
+
+
+@media (max-width:1024px) and (min-width:770px) {
+    .side {
+        display: none;
+    }
+
+    .container {
+        background-color: var(--background);
+        width: 100%;
+        height: auto;
+        left: 20%;
+
+
+    }
+
+    .logo {
+        left: 25%;
+        height: 40px;
+        width: 300px;
+    }
+}
+
+@media (max-width:768px) {
+    .side {
+        display: none;
+    }
+
+    .container {
+        background-color: var(--background);
+        left: 13%;
+        top: 10%;
+    }
+
+    .logo {
+        left: 18%;
+        height: 40px;
+        width: 300px;
+        top: 5%;
+        z-index: 1;
+    }
+
+    .n {
+        left: 145px;
+    }
+
+    .eye {
+        top: 248px;
+    }
+}
+
+@media (max-width:425px) {
+    .container {
+        left: -69px;
+        top: 10%;
+    }
+
+    .logo {
+        left: -2%;
+        top: 3%;
+    }
+
+    .eye {
+        left: 100%;
+    }
+}
+
+@media(max-width:375px) {
+    .container {
+        left: -90px;
+    }
+
+    .eye {
+        left: 112%;
+    }
+}
+
+@media(max-width:320px) {
+    .container {
+        left: -110px;
+    }
+
+    .email {
+        width: 311px;
+    }
+
+    .senha {
+        width: 311px;
+    }
+
+    button {
+        width: 311px;
+    }
+    .logo{
+        left: -17%; 
+    }
+    .eye{
+        left: 125%
+    }
+}
